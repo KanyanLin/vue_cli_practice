@@ -34,6 +34,12 @@
         >
         動態路由
         </router-link>
+        <router-link
+          to="/newpage/dynamicRouterByProps/610a4b32e603a46f"
+          class="list-group-item list-group-item-action"
+        >
+        動態路由搭配 Props
+        </router-link>
       </div>
     </div>
     <div class="col-8">
