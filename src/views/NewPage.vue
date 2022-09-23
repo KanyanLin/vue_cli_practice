@@ -8,37 +8,43 @@
           }"
           class="list-group-item list-group-item-action"
         >
-          A頁面
+          元件 A
         </router-link>
         <router-link
           to="/newpage/b"
           class="list-group-item list-group-item-action"
         >
-          B頁面
+          元件 B
         </router-link>
         <router-link
           to="/newpage/namedView/c2a"
           class="list-group-item list-group-item-action"
         >
-        命名路由 c2a
+        命名視圖 c2a
         </router-link>
         <router-link
           to="/newpage/namedView/a2b"
           class="list-group-item list-group-item-action"
         >
-        命名路由 a2b
+        命名視圖 a2b
         </router-link>
         <router-link
           to="/newpage/dynamicRouter/610a4b32e603a46f"
           class="list-group-item list-group-item-action"
         >
-        動態路由
+        動態路由($route)
         </router-link>
         <router-link
           to="/newpage/dynamicRouterByProps/610a4b32e603a46f"
           class="list-group-item list-group-item-action"
         >
-        動態路由搭配 Props
+        動態路由(props)
+        </router-link>
+        <router-link
+          to="/newpage/routerNavigation"
+          class="list-group-item list-group-item-action"
+        >
+        路由導覽
         </router-link>
       </div>
     </div>
