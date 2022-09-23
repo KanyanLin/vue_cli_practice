@@ -28,6 +28,12 @@
         >
         命名路由 a2b
         </router-link>
+        <router-link
+          to="/newpage/dynamicRouter/610a4b32e603a46f"
+          class="list-group-item list-group-item-action"
+        >
+        動態路由
+        </router-link>
       </div>
     </div>
     <div class="col-8">

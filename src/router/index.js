@@ -36,6 +36,13 @@ const routes = [
         path: 'b',
         component: () => import('../views/ComponentB.vue')
       },
+      // 動態路由
+      // 專案 URL 為 http://localhost:8080/dist/#/newpage/dynamicRouter/1
+      // 畫面顯示 1 號使用者的資訊
+      {
+        path: 'dynamicRouter/:id',
+        component: () => import('../views/DynamicRouter.vue')
+      },
       {
         path: 'namedView',
         component: () => import('../views/NamedView.vue'),
