@@ -15,7 +15,7 @@ export default {
     }
   },
   created () {
-    console.log('props', this.id)
+    // console.log('props', this.id)
     this.seed = this.id
     axios
       .get(`https://randomuser.me/api/?seed=${this.seed}`)

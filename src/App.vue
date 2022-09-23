@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">Home</router-link>
       <button
@@ -25,10 +25,13 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" style="height: 300vh">
     <router-view />
     {{ name }}
   </div>
+  <router-link to="/newPage/routerNavigation"
+    >/newPage/routerNavigation</router-link
+  >
 </template>
 
 <script>
@@ -43,4 +46,8 @@ export default {
 
 <style lang="scss">
 @import 'bootstrap';
+
+body {
+  padding-top: 80px;
+}
 </style>

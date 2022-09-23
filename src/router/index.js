@@ -28,7 +28,7 @@ const routes = [
       // path: '/newpage/a' 對應 a.vue 元件
       // newpage 畫面顯示 a 的子頁面內容
       {
-        path: '',
+        path: 'a',
         name: 'a',
         component: () => import('../views/ComponentA.vue')
       },
@@ -47,7 +47,7 @@ const routes = [
         path: 'dynamicRouterByProps/:id',
         component: () => import('../views/DynamicRouterByProps.vue'),
         props: (route) => {
-          console.log('route:', route)
+          // console.log('route:', route)
           return {
             id: route.params.id
           }
@@ -95,7 +95,21 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  linkActiveClass: 'active',
+  scrollBehavior (to, from, savedPosition) {
+    // `to` 和 `from` 都是路由地址
+    // `savedPosition` 可以为空，如果没有的话。
+    // console.log('to', to)
+    // console.log('from', from)
+    // console.log('savedPosition', savedPosition)
+    if (to.fullPath.match('newpage')) {
+      return {
+        top: 0
+      }
+    }
+    return {}
+  }
 })
 
 export default router
