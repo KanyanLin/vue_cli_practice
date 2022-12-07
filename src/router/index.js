@@ -99,7 +99,9 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  linkActiveClass: 'active',
+  // https://router.vuejs.org/zh/api/#linkactiveclass
+  linkActiveClass: 'active', // 路由啟用的CSS樣式
+  // https://router.vuejs.org/zh/api/#scrollbehavior
   scrollBehavior (to, from, savedPosition) {
     // `to` 和 `from` 都是路由地址
     // `savedPosition` 可以为空，如果没有的话。
