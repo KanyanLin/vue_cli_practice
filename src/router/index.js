@@ -46,6 +46,9 @@ const routes = [
       {
         path: 'dynamicRouterByProps/:id',
         component: () => import('../views/DynamicRouterByProps.vue'),
+        // props: () => ({
+        //   id: '610a4b32e603a46f'
+        // }),
         props: (route) => {
           // console.log('route:', route)
           return {

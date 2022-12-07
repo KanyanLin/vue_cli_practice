@@ -1,7 +1,7 @@
 <template>
   <h1>ID：{{ seed }}</h1>
-  <div>{{ jsonData }}</div>
-  <!-- <div class="card">
+  <!-- <div>{{ jsonData }}</div> -->
+  <div class="card" v-if="jsonData.picture">
     <img :src="jsonData.picture.large" class="card-img-top" />
     <div class="card-body">
       <h5 class="card-title">
@@ -14,7 +14,7 @@
       <p class="card-text">Phone: {{ jsonData.phone }}</p>
       <p class="card-text">Email: {{ jsonData.email }}</p>
     </div>
-  </div> -->
+  </div>
 </template>
 
 <script>
